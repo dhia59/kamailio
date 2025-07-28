@@ -199,6 +199,7 @@ struct module_exports exports = {
  */
 static int mod_init(void)
 {
+	LM_ERR("mod_init comment by LRCX\n");
 	int lf;
 	if(cfg_declare("xlog", xlog_cfg_def, &xlog_default_cfg, cfg_sizeof(xlog),
 			   &xlog_cfg)) {
